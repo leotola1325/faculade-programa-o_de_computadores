@@ -59,6 +59,24 @@ dias_atraso = int(input("digite o valor de dias de atraso: "))
 atual_prestação = prestação + (prestação*(multa/100)*dias_atraso)
 
 print(f"o valor da atual prestação com a multa e igual a:  {atual_prestação} ")
+
+
+
 # 5- Faça uma programa em Python que peça do usuário um valor em graus para um
 # ângulo. Converta-o para radianos e, usando funções da biblioteca math, imprima o seno,
 # cosseno e tangente deste ângulo.
+print("================== calculo seno cosseno e tangente ======================")
+graus = float(input("digite o valor em graus: "))
+
+radianos = math.radians(graus)
+seno = math.sin(radianos)
+cosseno = math.cos(radianos)
+tangente = math.tan(radianos)
+print(f'''   ============= angulo =============
+
+   graus = {graus}
+   radianos = {radianos}
+   seno = {seno}
+   cosseno = {cosseno}
+   tangente = {tangente}
+''')
