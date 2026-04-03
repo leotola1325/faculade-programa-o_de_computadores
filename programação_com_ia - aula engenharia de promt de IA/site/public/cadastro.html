@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+</head>
+<body>
+
+<h2>Cadastro</h2>
+
+<input id="usuario" placeholder="Usuário">
+<input id="senha" type="password" placeholder="Senha">
+<button onclick="cadastrar()">Cadastrar</button>
+
+<script>
+function cadastrar() {
+    fetch("/cadastro", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            usuario: usuario.value,
+            senha: senha.value
+        })
+    })
+    .then(() => alert("Cadastrado com sucesso!"));
+}
+</script>
+
+</body>
+</html>
