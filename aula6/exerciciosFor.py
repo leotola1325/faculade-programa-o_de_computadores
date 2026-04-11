@@ -1,5 +1,6 @@
-#escrever um  programa para um vetor de 5 medias dos alunos fazer  a somatoria e imprimir a media  da sala
 
+#exercicio1 - laço de repetição FOR
+#escrever um  programa para um vetor de 5 medias dos alunos fazer  a somatoria e imprimir a media  da sala
 medias = [5.5,10,8,1,6]
 somaMedia = 0
 maiorMedia = max(medias)
@@ -11,3 +12,6 @@ for media  in medias:
     
 print(somaMedia)
 print(f'medida da sala = {somaMedia / len(medias)} e a maior media indivual e: {maiorMedia}')
+
+#exercicio2 - lista fibonacci   
+#usuario digite um numero e ira aparecer a lista de fibonacc

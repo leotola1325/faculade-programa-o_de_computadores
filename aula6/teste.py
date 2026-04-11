@@ -13,6 +13,9 @@ for var in frutas:
         break
     print(var)
     
-
-for par in range(0,21,2):
-     print(par)
+                #onde comeca
+for par in range(0,21,2):  #'2' quantidade de quanto tempo pula                   
+     print(par)    #onde termina
+     
+     
+#lista fimonase
